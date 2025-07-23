@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dogssr.com丨永久发布页</title>
+    <meta name="keywords" content="狗云最新地址">
+    <meta name="description" content="Dogssr">
+    <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/dogssr.css">
+    <style>
+        #uptime {
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        .popup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .popup-header {
+            text-align: center;
+        }
+        .popup-main {
+            text-align: center;
+        }
+        .popup-footer {
+            text-align: center;
+        }
+
+        /* 移动端优化 */
+        @media only screen and (max-width: 768px) {
+            h3.popup-title {
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+            #uptime {
+                font-size: 1rem;
+            }
+            .popup-main p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .popup-domain strong a {
+                font-size: 1rem;
+                padding: 10px 0;
+                display: block;
+            }
+            .popup-footer button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body class="bj" style="zoom: 1;">
+    <!-- 页面主体内容 -->
+    <div>
+        <div class="popup popup-tips none popupShow" id="popup">
+            <div class="popup-header">
+                <h3 class="popup-title">😃狗云丨发布页😃</h3>
+            </div>
+            <div class="popup-main">
+                <p>🚨 为防止网站失联迷路，建议收藏本页地址！<br>网站已经运行：<strong id="uptime">194天 13小时 41分 18秒</strong></p>
+                <p class="popup-domain">
+                    <span>狗云官网入口</span>
+                    <strong><a href="https://api01.dogssr.sbs" target="_blank">点击进入</a></strong>
+                </p>
+             <!--  <p class="popup-domain">
+                    <span>狗云官网备用入口</span>
+                    <strong><a href="https://web1.dogssr.sbs" target="_blank">点击进入</a></strong>
+                </p>-->
+               <p class="popup-domain"> 
+                    <span>加TG群参与活动</span>
+                    <strong><a href="https://t.me/dogssr_chat" target="_blank">TG群组：@dogssr_chat</a></strong>
+                </p>
+                <p>🍀 有疑问请发送进群组 <strong>私聊机器人！</strong></p>
+                <p align="center"><strong>请 Ctrl+D 收藏本页到浏览器收藏夹</strong></p>
+            </div>
+            <div class="popup-footer">
+                <div class="popup-btn close-pop">
+                    <button type="submit" onclick="javascript:addFavorite2()" id="bookmark-it" title="把 狗云官网发布页发布页 加入收藏夹">收到，OVER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            // 网站运行时间
+            function updateUptime() {
+                var startDate = new Date('2024-01-20T00:00:00Z'); // 设置网站开始运行的时间
+                var now = new Date();
+                var diff = now - startDate;
+
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('uptime').innerText = days + '天 ' + hours + '小时 ' + minutes + '分 ' + seconds + '秒';
+            }
+
+            setInterval(updateUptime, 1000);
+            updateUptime();
+        }
+    </script>
+</body>
+<style id="A_T_S">*{-webkit-user-select:auto !important;}</style>
+<!--<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="63213e79-2ff9-4ff5-9d72-793fc5d94a6c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script type="text/javascript" src="https://ai.haruka.cloud/intro.js"></script>-->
+
+</html>
